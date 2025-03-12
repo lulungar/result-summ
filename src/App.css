@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(221, 100%, 96%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  display: flex;
+  max-width: 800px;
+  border-radius: 3rem;
+}
+
+main .left {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 320px;
+  padding: 30px 45px;
+  gap: 45px;
+  border-radius: 3rem;
+}
+
+main .left .result {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  padding: 30px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .left .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.grey {
+  color: hsl(241, 100%, 89%);
+}
+
+#title {
+  font-size: 1.8rem;
+}
+
+main .left .result h1 {
+  font-size: 6rem;
+}
+
+main .left .result p {
+  font-size: 1.6rem;
+}
+
+main .left .text h1 {
+  font-size: 2.8rem;
+}
+
+main .left .text p {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+main .right {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 45px;
+  gap: 30px;
+}
+
+main .right .result-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main .right .result-container .result-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+  gap: 70px;
+  border-radius: 8px;
+}
+
+main .right .result-container .result-item .result-left {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.reaction {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+
+.reaction .result-left h2 {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: rgba(255, 176, 31, 0.1);
+}
+
+.memory .result-left h2 {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: rgba(0, 189, 145, 0.1);
+}
+
+.verbal .result-left h2 {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: rgba(17, 37, 212, 0.1);
+}
+
+.visual .result-left h2 {
+  color: hsl(234, 85%, 45%);
+}
+
+@media (max-width: 641px) {
+  main {
+    max-width: 400px;
+    flex-direction: column;
+  }
+
+  main .right {
+    max-width: 400px;
+  }
+
+  main .left {
+    max-width: 4005px;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    max-width: 375px;
+    flex-direction: column;
+  }
+
+  main .right {
+    max-width: 375px;
+  }
+
+  main .left {
+    max-width: 375px;
+  }
+}

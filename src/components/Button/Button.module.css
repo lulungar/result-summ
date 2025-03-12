@@ -1,0 +1,14 @@
+.btn {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  border-radius: 36px;
+  padding: 12px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
